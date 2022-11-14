@@ -21,7 +21,6 @@ export const scrollToUp = () => {
         const currentPosY = window.scrollY;
         console.log(currentPosY);
 
-
         animate({
             duration: 3000,
             timing(timeFraction) {
