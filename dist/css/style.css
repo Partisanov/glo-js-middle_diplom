@@ -499,13 +499,16 @@ input.error {
 #benefits {
   background-color: #f5f6f6;
 }
-.benefits-inner {
+#benefits .container{
+  overflow: hidden;
+}
+.benefits__slider {
   text-align: center;
 }
-.benefit-image {
+.benefits__image {
   margin-bottom: 22px;
 }
-.benefit-title {
+.benefits__title {
   margin: 0;
   font-size: 18px;
   text-transform: uppercase;
@@ -758,8 +761,7 @@ p.services-image_mobile {
   border-radius: 100%;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
-.about-wrap {
-}
+
 .about-inner:after {
   position: absolute;
   content: "";
@@ -849,8 +851,7 @@ p.services-image_mobile {
   position: absolute;
   height: 100px;
 }
-.footer-copyright {
-}
+
 .footer-copyright span {
   color: #ffb135;
 }
@@ -1212,10 +1213,10 @@ p.services-image_mobile {
   .contacts-cart {
     padding: 40px;
   }
-  .benefit-title {
+  .benefis__title {
     margin-bottom: 40px;
   }
-  #benefits .col-md-4:last-child .benefit-title {
+  #benefits .col-md-4:last-child .benefits__title {
     margin-bottom: 0;
   }
   #header .slogan {
@@ -1296,10 +1297,10 @@ p.services-image_mobile {
   }
 }
 @media (max-width: 767px) {
-  #benefits .col-md-4:last-child .benefit-title {
+  #benefits .col-md-4:last-child .benefits__title {
     margin-bottom: 40px;
   }
-  #benefits .col-md-4:last-child .col-sm-6:last-child .benefit-title {
+  #benefits .col-md-4:last-child .col-sm-6:last-child .benefits__title {
     margin-bottom: 0;
   }
   .document-inner {
@@ -1459,14 +1460,14 @@ input.error {
   }
   ::-webkit-scrollbar-button {
     background-image: url("");
-    background-repat: no-repeat;
+    background-repeat: no-repeat;
     height: 0px;
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
     background-color: #008f29;
     border-radius: 0px;
-    webkit-border-radius: 0px;
+    -webkit-border-radius: 0px;
   }
   ::-webkit-scrollbar-track {
     background-color: #2c2c2c;
@@ -1590,17 +1591,6 @@ input.error {
   background-color: rgba(0, 0, 0, 0.45);
 }
 
-.benefits-wrap {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-}
-
-.benefits__item {
-  width: 100%;
-  max-width: 185px;
-}
-
 .benefits-arrows {
   display: flex;
   justify-content: space-between;
@@ -1666,14 +1656,14 @@ input.error {
 }
 
 @media (min-width: 576px) {
-  .benefits-wrap {
+  .benefits__wrap {
     width: 100%;
     max-width: 576px;
   }
 }
 
 @media (min-width: 768px) {
-  .benefits-wrap {
+  .benefits__wrap {
     width: 100%;
     max-width: 576px;
   }
