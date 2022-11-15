@@ -29,6 +29,8 @@ export const modal = () => {
             servicesModal.style.display = 'none';
         }
 
-    });
+        //show image modal
 
+
+    });
 };

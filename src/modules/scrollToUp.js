@@ -19,10 +19,9 @@ export const scrollToUp = () => {
 
     toUpBtn.addEventListener('click', () => {
         const currentPosY = window.scrollY;
-        console.log(currentPosY);
 
         animate({
-            duration: 3000,
+            duration: `${currentPosY / 2}`,
             timing(timeFraction) {
                 return timeFraction;
             },
