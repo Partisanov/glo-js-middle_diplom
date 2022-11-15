@@ -24,4 +24,23 @@ export const sliders = () => {
         }
     });
 
+    const servicesSlider = new Swiper('.services__slider', {
+        direction: 'horizontal',
+        slidesPerView: 1,
+        // Navigation arrows
+        navigation: {
+            nextEl: '.services__arrow--right',
+            prevEl: '.services__arrow--left',
+        },
+        breakpoints: {
+            // when window width is >= 991px
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            }
+        }
+
+    });
+
+
 };

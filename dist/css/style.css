@@ -538,6 +538,9 @@ input.error {
 #calc {
   background-color: #466a78;
 }
+.services__slider{
+  overflow: hidden;
+}
 .service-block {
   position: relative;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
@@ -611,6 +614,13 @@ p.services-image_mobile {
   animation-duration: 0.3s;
   -webkit-animation-name: rotateInUpLeft;
   animation-name: rotateInUpLeft;
+}
+
+@media(max-width:1200px) {
+  .service-text h3{
+    font-size: medium;
+  }
+  
 }
 .order {
   background: url("../images/order2-bg.jpg") no-repeat center;
