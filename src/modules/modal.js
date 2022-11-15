@@ -3,6 +3,8 @@ export const modal = () => {
     const overlay = document.querySelector('.overlay');
     const callbackModal = document.querySelector('.header-modal');
     const servicesModal = document.querySelector('.services-modal');
+    const sertificateModal = document.querySelector('.sertificate__modal');
+    const sertificateImg = document.querySelector('.sertificate__img');
 
     body.addEventListener('click', (e) => {
         //show callback modal
@@ -30,7 +32,20 @@ export const modal = () => {
         }
 
         //show image modal
+        if (e.target.closest('.sertificate-document')) {
+            e.preventDefault();
+            const imgSrc = e.target.closest('.sertificate-document').getAttribute('href');
+            sertificateImg.setAttribute("src", imgSrc);
+            overlay.style.display = 'block';
+            sertificateModal.style.display = 'block';
 
+        }
 
+        //close image modal
+        if ((e.target.classList.contains('overlay') ||
+            e.target.classList.contains('sertificate__btn-close')) && (sertificateModal.style.display === 'block')) {
+            overlay.style.display = 'none';
+            sertificateModal.style.display = 'none';
+        }
     });
 };
