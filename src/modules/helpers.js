@@ -18,3 +18,14 @@ export const animate = ({ timing, draw, duration }) => {
 
     });
 };
+
+export const debounce = (func, timeout) => {
+    return function (args) {
+        let previousCall = this.lastCall;
+        this.lastCall = Date.now();
+        if (previousCall && ((this.lastCall - previousCall) <= timeout)) {
+            clearTimeout(this.lastCallTimer);
+        }
+        this.lastCallTimer = setTimeout(() => func(args), timeout);
+    };
+};
