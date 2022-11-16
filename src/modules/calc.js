@@ -35,7 +35,7 @@ export const calc = () => {
 
         if (startNum !== endNum) {
             animate({
-                duration: 3000,
+                duration: 1500,
 
                 timing(timeFraction) {
                     return timeFraction;

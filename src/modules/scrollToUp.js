@@ -21,7 +21,7 @@ export const scrollToUp = () => {
         const currentPosY = window.scrollY;
 
         animate({
-            duration: `${currentPosY / 2}`,
+            duration: `${currentPosY / 6}`,
             timing(timeFraction) {
                 return timeFraction;
             },

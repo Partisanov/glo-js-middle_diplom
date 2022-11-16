@@ -1,7 +1,7 @@
 import { sendData } from "./sendData";
 
 export const sendForm = () => {
-    const forms = document.querySelectorAll('form.form-horizontal');
+    const forms = document.querySelectorAll('form');
 
     if (forms.length === 0) {
         throw new Error('отсутствует форма для отпраки');
@@ -29,9 +29,12 @@ export const sendForm = () => {
             sendData(formBody)
                 .then(data => {
                     form.reset();
+                    alert('Заявка успешно отправлена! \n С Вами свяжутся в ближайшее время!');
                 })
                 .catch(error => {
                     console.log(error.message);
+                    alert(`Произошла ошибка, данные не отправлены. \n ${error.message}`);
+
                 });
 
         });

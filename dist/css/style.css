@@ -39,6 +39,7 @@ h3 {
 .img-responsive {
   display: inline-block;
 }
+
 .phone-icon {
   background: url("../images/phone.png") no-repeat;
   display: inline-block;
@@ -791,7 +792,6 @@ p.services-image_mobile {
 .document-inner {
   display: inline-block;
   position: relative;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
 }
 .document-overlay {
   background: url("../images/zoom.png") no-repeat center
@@ -1599,6 +1599,7 @@ input.error {
   height: 100vh;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.45);
+  z-index: 10;
 }
 
 .benefits-arrows {
@@ -1663,6 +1664,7 @@ input.error {
   right: 25px;
   bottom: 25px;
   transform: rotate(90deg);
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {
@@ -1678,6 +1680,7 @@ input.error {
     max-width: 576px;
   }
 }
+
 .sertificate__modal{
   position: relative;
   display: none;
