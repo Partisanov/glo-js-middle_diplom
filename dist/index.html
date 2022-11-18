@@ -335,13 +335,15 @@
 								<div class="form-group">
 									<div class="col-sm-12">
 										<input type="text" name="fio" class="form-control" required
-											placeholder="ваше имя">
+											placeholder="ваше имя" pattern="[a-zA-Zа-яёА-ЯЁ]{4,}"
+											title="Минимум 4 символа">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-12">
 										<input type="text" name="phone" class="form-control" required
-											placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" maxlength="17">
+											placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" maxlength="17"
+											pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 									</div>
 								</div>
 								<div class="form-group">
@@ -524,13 +526,15 @@
 								<div class="form-group">
 									<div class="col-sm-12">
 										<input type="text" name="fio" class="form-control" required
-											placeholder="ваше имя">
+											placeholder="ваше имя" pattern="[a-zA-Zа-яёА-ЯЁ]{4,}"
+											title="Минимум 4 символа">
 									</div>
 								</div>
 								<div class="form-group">
 									<div class="col-sm-12">
 										<input type="text" name="phone" class="form-control" required
-											placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" maxlength="17">
+											placeholder="ваш телефон" data-mask="+7 (999) 999-99-99" maxlength="17"
+											pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 									</div>
 								</div>
 								<div class="form-group">
@@ -662,7 +666,7 @@
 				</div>
 				<div class="form-group">
 					<input type="text" name="phone" class="form-control" required placeholder="Контактный телефон*"
-						data-mask="+7 (999) 999-99-99" maxlength="17">
+						data-mask="+7 (999) 999-99-99" maxlength="17" pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 				</div>
 				<div class="form-action">
 					<div class="text-center"><button type="submit" class="btn btn-warning feedback">Свяжитесь со
@@ -692,7 +696,7 @@
 				</div>
 				<div class="form-group">
 					<input type="text" name="phone" class="form-control" required placeholder="Контактный телефон*"
-						data-mask="+7 (999) 999-99-99" maxlength="17">
+						data-mask="+7 (999) 999-99-99" maxlength="17" pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 				</div>
 				<div class="form-action">
 					<div class="text-center"><button type="submit" class="btn btn-success feedback">Принять
@@ -719,7 +723,7 @@
 				</div>
 				<div class="form-group">
 					<input type="text" name="phone" class="form-control" required placeholder="Контактный телефон*"
-						data-mask="+7 (999) 999-99-99" maxlength="17">
+						data-mask="+7 (999) 999-99-99" maxlength="17" pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 				</div>
 				<div class="form-action">
 					<div class="text-center"><button type="submit" class="btn btn-success feedback">Вызвать
@@ -762,11 +766,13 @@
 								ответим на все вопросы!</p>
 							<form name="callback-form">
 								<div class="form-group">
-									<input type="text" name="fio" class="form-control" required placeholder="Ваше имя*">
+									<input type="text" name="fio" class="form-control" required placeholder="Ваше имя*"
+										pattern="[a-zA-Zа-яёА-ЯЁ]{4,}" title="Минимум 4 символа">
 								</div>
 								<div class="form-group">
 									<input type="text" name="phone" class="form-control" required
-										placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99" maxlength="17">
+										placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99" maxlength="17"
+										pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 								</div>
 								<div class="form-action">
 									<div class="text-center"><button type="submit"
@@ -797,11 +803,13 @@
 							</p>
 							<form name="application-form">
 								<div class="form-group">
-									<input type="text" name="fio" class="form-control" required placeholder="Ваше имя*">
+									<input type="text" name="fio" class="form-control" required placeholder="Ваше имя*"
+										pattern="[a-zA-Zа-яёА-ЯЁ]{4,}" title="Минимум 4 символа">
 								</div>
 								<div class="form-group">
 									<input type="text" name="phone" class="form-control" required
-										placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99" maxlength="17">
+										placeholder="Контактный телефон*" data-mask="+7 (999) 999-99-99" maxlength="17"
+										pattern="[+0-9]{6,17}" title="Минимум 6 символов">
 								</div>
 								<div class="form-action">
 									<div class="text-center"><button type="submit"
